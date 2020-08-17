@@ -1,0 +1,294 @@
+$white   : #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #868e96;
+$gray-700: #495057;
+$gray-800: #373a3c;
+$gray-900: #212529;
+$black   : #000;
+
+$blue     : #2780e3;
+$indigo   : #6610f2;
+$purple   : #613d7c;
+$pink     : #e83e8c;
+$red      : #ff0039;
+$orange   : #f2661f;
+$yellow   : #bed32b;
+$green    : #3fb618;
+$teal     : #20c997;
+$cyan     : #9954bb;
+$lightblue: lighten($blue, 20%);
+
+$primary  : $blue;
+$secondary: $orange;
+$success  : $green;
+$info     : $lightblue;
+$warning  : $yellow;
+$danger   : $red;
+$light    : $gray-100;
+$dark     : $gray-800;
+
+@import "~bootswatch/dist/cosmo/_variables.scss";
+@import "~bootstrap/scss/bootstrap.scss";
+@import "~bootswatch/dist/cosmo/_bootswatch.scss";
+$fa-font-path: "../node_modules/font-awesome/fonts";
+// @import "~font-awesome/scss/font-awesome";
+
+button {
+    border-radius: 10px !important;
+}
+
+.error {
+    color: red;
+}
+
+body {
+    margin     : 0;
+    padding    : 0;
+    background : #E5E5E5;
+    font-family: 'Roboto', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+p:last-child {
+    margin-top: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+header {
+    background: #C4C4C4;
+    height    : 43px;
+}
+
+.menu h1 {
+    font-weight  : bold;
+    margin-bottom: 0;
+    color        : #D8034F;
+    font-size    : 24px;
+}
+
+.menu a {
+    font-size    : 24px;
+    color        : #000000;
+    margin-bottom: 0;
+    padding-left : 45px;
+}
+
+.menu {
+    display    : flex;
+    align-items: center;
+}
+
+.space {
+    padding: 20px;
+}
+
+.home h1 {
+    font-size    : 36px;
+    font-weight  : bold;
+    margin-bottom: 0;
+    color        : #000;
+}
+
+.main {
+    padding-right: 15px;
+    margin-bottom: 10px;
+}
+
+.box {
+    background: #C4C4C4;
+    width     : 212px;
+    height    : 177px;
+    text-align: center;
+    padding   : 20px;
+}
+
+.box-one {
+    background   : #C4C4C4;
+    width        : 212px;
+    height       : 260px;
+    text-align   : center;
+    margin-bottom: 10px;
+    cursor       : pointer;
+}
+
+.box-text {
+    background: #DD005D;
+    width     : 212px;
+}
+
+.text h1 {
+    color        : #000000;
+    margin-bottom: 0;
+    font-size    : 24px;
+    line-height  : 150px;
+}
+
+.event h1 {
+    color        : #fff;
+    margin-bottom: 0;
+    font-size    : 36px;
+}
+
+.all-text h1 {
+    color        : #fff;
+    font-size    : 18px;
+    margin-bottom: 0;
+}
+
+.all-text p {
+    color        : #000000;
+    font-size    : 18px;
+    margin-bottom: 0;
+    font-weight  : bold;
+}
+
+.all-text {
+    display        : flex;
+    justify-content: space-between;
+    align-items    : center;
+    padding-top    : 2px;
+}
+
+.box-text {
+    padding: 5px;
+}
+
+.box-flex {
+    display  : flex;
+    flex-wrap: wrap;
+}
+
+.plus img {
+    width     : 166px;
+    height    : 24px;
+    margin-top: 66px;
+}
+
+.plus h1 {
+    font-weight: bold;
+}
+
+.plus {
+    line-height: 119px;
+}
+
+.add p {
+    font-size    : 36px;
+    color        : #000000;
+    margin-bottom: 0;
+    text-align   : center;
+}
+
+/* add page css */
+.left img {
+    width: 50px;
+}
+
+.left h1 {
+    color        : #000000;
+    font-size    : 36px;
+    font-weight  : bold;
+    margin-bottom: 0;
+    padding-left : 10px;
+}
+
+.left {
+    display    : flex;
+    align-items: center;
+}
+
+.name-form p {
+    font-size    : 18px;
+    margin-bottom: 0;
+    font-size    : 18px;
+    font-weight  : bold;
+}
+
+.form-design {
+    width     : 314px;
+    height    : 29px;
+    background: #C4C4C4;
+    border    : none;
+    outline   : none;
+}
+
+.form-space {
+    padding-top: 10px;
+}
+
+.date h1 {
+    font-size    : 18px;
+    margin-bottom: 0;
+    color        : #000000;
+}
+
+.date p {
+    color        : #FF0000;
+    font-size    : 16px;
+    margin-bottom: 0;
+    padding-left : 30px;
+}
+
+.date {
+    display: flex;
+}
+
+.add-btn {
+    color      : #000000;
+    font-size  : 30px;
+    width      : 183px;
+    display    : inline-block;
+    text-align : center;
+    background : #C4C4C4;
+    font-weight: bold;
+    border     : white;
+}
+
+.add {
+    padding-top: 20px;
+}
+
+.preview h1 {
+    color        : #000000;
+    font-size    : 24px;
+    margin-bottom: 0;
+}
+
+.box-space {
+    padding-top: 30px;
+}
+
+@media (min-width:320px) and (max-width:575px) {
+    .box-flex {
+        display   : block;
+        text-align: center;
+    }
+
+    .box-one {
+        margin-left: 0;
+        margin-top : 15px;
+    }
+}

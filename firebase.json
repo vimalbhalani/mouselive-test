@@ -1,0 +1,16 @@
+{
+  "hosting": {
+    "public": "dist/frontend-testwork",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}

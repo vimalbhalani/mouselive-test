@@ -1,0 +1,43 @@
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="home">
+                    <h1> Home </h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="space"></div>
+<section>
+    <div class="container">
+        <div class="box-flex">
+            <ng-container>
+                <div class="main" *ngFor="let event of (events$| async);">
+                    <div class="box">
+                        <div class="text">
+                            <h1> PICTURE </h1>
+                        </div>
+                    </div>
+                    <div class="box-text">
+                        <div class="event">
+                            <h1>{{event?.name}}</h1>
+                            <div class="all-text">
+                                <h1> {{event?.address}} </h1>
+                                <p>{{event?.date ? formatDate(event.date) : ''}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box-one" (click)="redirectToAddEvent()">
+                    <div class="plus">
+                        <img src="assets/img/plus.svg" />
+                        <h1> Add More </h1>
+                    </div>
+                </div>
+            </ng-container>
+        </div>
+    </div>
+</section>

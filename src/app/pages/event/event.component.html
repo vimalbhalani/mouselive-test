@@ -1,0 +1,67 @@
+<section>
+    <div class="container">
+        <div class="left">
+            <img src="assets/img/left.webp" (click)="redirectToHome()" style="cursor: pointer;" />
+            <h1> Add Event </h1>
+        </div>
+    </div>
+</section>
+<div class="space"></div>
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-5">
+                <div class="box-space"></div>
+                <form [formGroup]="createEventForm" (ngSubmit)="f.form.valid && onSubmit()" #f="ngForm">
+                    <div class="name-form form-space">
+                        <p> Event name</p>
+                        <input type="text" class="form-design" placeholder="Event name" name="name"
+                            formControlName="name" />
+                        <label *ngIf="f.submitted && form.name.errors?.required" class="error">
+                            Please Enter Event Name
+                        </label>
+                    </div>
+                    <div class="name-form form-space">
+                        <p> Address</p>
+                        <input type="text" class="form-design" placeholder="Address" name="address"
+                            formControlName="address" />
+                        <label *ngIf="f.submitted && form.address.errors?.required" class="error">
+                            Please Enter Address
+                        </label>
+                    </div>
+                    <div class="name-form form-space">
+                        <p>Date</p>
+                        <input type="date" class="form-design" name="date" formControlName="date" />
+                        <label *ngIf="f.submitted && form.date.errors?.required" class="error">
+                            Please Choose Date
+                        </label>
+                    </div>
+                    <div class="add">
+                        <button type="submit" class="add-btn"> Add </button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-7">
+                <div class="preview">
+                    <h1> Preview </h1>
+                </div>
+                <div class="main">
+                    <div class="box">
+                        <div class="text">
+                            <h1> PICTURE </h1>
+                        </div>
+                    </div>
+                    <div class="box-text">
+                        <div class="event">
+                            <h1> {{form.name.value ? form.name.value : 'name'}} </h1>
+                            <div class="all-text">
+                                <h1> {{form.address.value ? form.address.value : 'address'}} </h1>
+                                <p> {{form.date.value ? formatDate(form.date.value) : 'date'}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
